@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloramania</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-title">
+                <h1>Coloramania</h1>
+            </div>
+            <div class="nav-buttons">
+                <button id="open-favorites" class="nav-btn">
+                    ❤️ Couleurs Favorites
+                </button>
+                <button id="scroll-top" class="nav-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+                    </svg>
+                    Retour en Haut
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <video autoplay muted loop id="header-video">
+            <source src="video/0_Ink_Paint_3840x2160.mp4" type="video/mp4">
+        </video>
+        <div class="header-content">
+            <h1>Coloramania</h1>
+        </div>
+    </header>
+    <main>
+        <div class="filter-section">
+            <div class="filter-header">
+                <h3>Filtrer par Catégorie</h3>
+            </div>
+            <div id="category-filters"></div>
+        </div>
+        <section id="colors">
+            <!-- Les couleurs seront ajoutées ici par JavaScript -->
+        </section>
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <img src="image/Img newletter.png" alt="Newsletter" class="newsletter-image">
+                    <div class="newsletter-text">
+                        <h2>Abonnez-vous à notre Newsletter</h2>
+                        <p>Restez à jour avec les dernières tendances en design et en couleurs</p>
+                        <form id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <button type="submit" class="newsletter-btn">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Favorites Overlay -->
+    <div id="favorites-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Couleurs Favoris</h2>
+            <button id="close-favorites" class="close-btn">&times;</button>
+            <div id="favorites-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p>Email: contact@coloramania.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">F</a>
+                    <a href="#" class="social-link">T</a>
+                    <a href="#" class="social-link">I</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coloramania. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
